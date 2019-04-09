@@ -1,26 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import Main from "./styles/Main";
+import Logo from "./components/Logo";
+import Home from "./containers/Home";
+import Projects from "./containers/Projects";
+import Photos from "./containers/Photos";
+import Contacts from "./containers/Contacts";
+import Navigation from "./containers/Navigation";
+
+const App = () => {
+  const [module, setModule] = useState("HOME");
+
+  return (
+    <Main>
+      <Logo/>
+      <Navigation toggle={setModule} />
+      {module === "HOME" ? <Home /> : null}
+      {module === "PROJECTS" ? <Projects /> : null}
+      {module === "PHOTOS" ? <Photos /> : null}
+      {module === "CONTACTS" ? <Contacts /> : null}
+    </Main>
+  );
+};
 
 export default App;
