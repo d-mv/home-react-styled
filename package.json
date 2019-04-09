@@ -1,6 +1,9 @@
 {
   "name": "home-react-styled",
-  "version": "0.1.0",
+  "version": "0.5.0",
+  "description": "Home app with React & Styled Components",
+  "author": "Dmitry Melnikov",
+  "license": "UNLICENSED",
   "private": true,
   "dependencies": {
     "nprogress": "^0.2.0",
