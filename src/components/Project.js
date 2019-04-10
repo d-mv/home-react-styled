@@ -1,17 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 
 import ProjectCard from "../styles/ProjectCard";
 import CardPhoto from './CardPhoto'
 import CardTitle from "./CardTitle";
+import CardDescriptionStyle from "../styles/CardDescriptionStyle";
 import CardTechIcons from "./CardTechIcons";
 import CardLinks from './CardLinks'
-
-
-const CardDescription = styled.section`
-  grid-area: details;
-  padding: 10px;
-`;
 
 class Project extends React.Component {
   render() {
@@ -20,7 +14,7 @@ class Project extends React.Component {
         <CardPhoto photo={this.props.project.photo}>
           <CardTitle title={[this.props.project.title, this.props.project.description]}/>
         </CardPhoto>
-        <CardDescription>{this.props.project.details}</CardDescription>
+        <CardDescriptionStyle>{this.props.project.details}</CardDescriptionStyle>
         <CardTechIcons technology={this.props.project.technology} icons={this.props.icons}/>
         <CardLinks links={this.props.project.links}/>
       </ProjectCard>

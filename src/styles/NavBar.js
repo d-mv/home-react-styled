@@ -1,4 +1,3 @@
-// import React from "react";
 import styled from "styled-components";
 
 const NavBar = styled.nav`
@@ -18,10 +17,18 @@ const NavBar = styled.nav`
       transform: translateY(0);
     }
   }
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   z-index: 100;
   font-weight: 300;
   @media (max-width: 499px) {
-    display: flex;
+    display: ${props => props.show};
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
@@ -31,13 +38,13 @@ const NavBar = styled.nav`
     animation: 1s ease-out 0s 1 slideInFromLeft;
   }
   @media (min-width: 500px) {
-    display: flex;
+    display: ${props => props.show};
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
     position: absolute;
-    top: 50px;
-    left: -38px;
+    top: 45px;
+    left: -18px;
     animation: 1s ease-out 0s 1 slideInFromTop;
   }
 `;

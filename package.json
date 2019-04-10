@@ -1,6 +1,6 @@
 {
   "name": "home-react-styled",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Home app with React & Styled Components",
   "author": "Dmitry Melnikov",
   "license": "UNLICENSED",
@@ -11,7 +11,8 @@
     "react-dom": "^16.8.6",
     "react-icons": "^3.5.0",
     "react-scripts": "2.1.8",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "react-scripts start",

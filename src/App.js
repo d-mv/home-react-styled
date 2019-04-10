@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Main from "./styles/Main";
-import Logo from "./components/Logo";
 import Home from "./containers/Home";
 import Projects from "./containers/Projects";
 import Photos from "./containers/Photos";
@@ -13,7 +12,6 @@ const App = () => {
 
   return (
     <Main>
-      <Logo/>
       <Navigation toggle={setModule} />
       {module === "HOME" ? <Home /> : null}
       {module === "PROJECTS" ? <Projects /> : null}

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Profile = styled.div`
   @media (max-width: 699px) {
-    grid-area: message;
+    grid-area: alpha;
     align-self: center;
     justify-self: end;
     display: flex;
@@ -12,7 +12,7 @@ const Profile = styled.div`
     word-wrap: normal;
   }
   @media (min-width: 700px) {
-    grid-area: message;
+    grid-area: alpha;
     padding-left: 40px;
     align-self: center;
     justify-self: end;

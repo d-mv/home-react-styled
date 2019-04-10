@@ -12,6 +12,7 @@ const CardLinks = props => {
             <CardLink key={link_id} link={props.links[link_id]} id={link_id} />
           );
         }
+        return null;
       })}
     </CardLinksStyle>
   );

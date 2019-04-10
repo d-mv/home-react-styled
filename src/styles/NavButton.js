@@ -1,8 +1,14 @@
 // import React from 'react'
 import styled from "styled-components";
 
-const NavButton = styled.div`
+const NavButton = styled.button`
+  font-family: Rubik;
+  font-weight: 300;
   border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  background: none;
   @media (max-width: 499px) {
     display: flex;
     padding: 10px;
@@ -24,7 +30,7 @@ const NavButton = styled.div`
     width: 80px;
     &:hover {
       transform: none;
-      padding: 30px 30px 30px 80px;
+      padding: 30px 30px 20px 80px;
       background-color: rgba(255, 255, 255, 0.9);
     }
     &:focus {

@@ -9,5 +9,6 @@ z-index: 101;
   border-bottom: 1px solid grey;
   font-size: 18px;
   background-color: white;
+  cursor:pointer;
 `;
 export default LogoStyle;

@@ -9,17 +9,18 @@ const Photo = styled.div`
       transform: scale(1);
     }
   }
+
   img {
     @media (max-width: 350px) {
       margin: 20px 0;
       align-self: center;
-      grid-area: photo;
+      grid-area: beta;
       width: 100vw;
       box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
     }
     @media (min-width: 351px) {
       align-self: center;
-      grid-area: photo;
+      grid-area: beta;
       width: 20rem;
       border-radius: 3px;
       box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);

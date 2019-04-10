@@ -5,7 +5,7 @@ const CardTechIconsStyle = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: left;
-  padding: 10px 5px;
+  padding: 0 5px;
 `;
 
 export default CardTechIconsStyle;
