@@ -4,6 +4,7 @@
   "description": "Home app with React & Styled Components",
   "author": "Dmitry Melnikov",
   "license": "UNLICENSED",
+  "homepage": "https://melnikov.dev/home-react-styled/build",
   "private": true,
   "dependencies": {
     "nprogress": "^0.2.0",

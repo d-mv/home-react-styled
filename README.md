@@ -1,4 +1,4 @@
-# Home Page SPA (React/Styled Edition)
+# Homepage SPA (React/Styled Edition)
 
 This is a React edition of [Vue SPA](https://github.com/d-mv/home). Stack used:
 
