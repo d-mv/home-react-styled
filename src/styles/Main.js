@@ -14,4 +14,4 @@ const Main = styled.main`
   margin: 0;
   padding: 0;
 `;
-export default Main
+export default Main;

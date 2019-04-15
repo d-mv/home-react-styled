@@ -35,7 +35,6 @@ const NavBar = styled.nav`
     left: 0px;
     background-color: rgba(255, 255, 255, 0.9);
     animation: 1s ease-out 0s 1 slideInFromTop;
-    /* animation: 1s ease-out 0s 1 slideInFromLeft; */
     top: 45px;
   }
   @media (min-width: 500px) {

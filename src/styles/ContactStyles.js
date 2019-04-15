@@ -12,12 +12,12 @@ const ContactIcon = styled.div`
   line-height: 2.5rem;
   vertical-align: center;
   font-size: 2rem;
-  cursor:pointer;
+  cursor: pointer;
 `;
 const ContactText = styled.div`
   font-size: 1rem;
   line-height: 2.5rem;
-    cursor:pointer;
+  cursor: pointer;
 `;
 
 export { ContactIcons, ContactTexts, ContactIcon, ContactText };

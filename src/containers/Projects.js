@@ -12,7 +12,11 @@ export default function Projects() {
       <ProjectCards>
         {Object.keys(data.projects).map(project_id => {
           return (
-            <Project key={project_id} project={data.projects[project_id]} icons={data.technology}/>
+            <Project
+              key={project_id}
+              project={data.projects[project_id]}
+              icons={data.technology}
+            />
           );
         })}
       </ProjectCards>

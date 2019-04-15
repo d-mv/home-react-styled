@@ -7,7 +7,6 @@ import Message from "../components/Message";
 import SendMessage from "../components/SendMessage";
 import Photo from "../styles/Photo";
 
-
 export default function Home() {
   return (
     <Content id="content">

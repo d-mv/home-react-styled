@@ -8,7 +8,7 @@ const PhotosMainTitle = styled.div`
 `;
 
 const PhotosMainTitleLines = styled.p`
-margin: 0;
+  margin: 0;
   padding: 5px 10px;
   font-weight: 300;
 `;

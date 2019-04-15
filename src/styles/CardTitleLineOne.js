@@ -5,5 +5,4 @@ const CardTitleLineOne = styled.section`
   font-size: 1.5rem;
   font-weight: 300;
 `;
-export default CardTitleLineOne
-;
+export default CardTitleLineOne;

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-const NavigationStyle = styled.div``
+const NavigationStyle = styled.div``;
 
-export default NavigationStyle
+export default NavigationStyle;

@@ -7,9 +7,10 @@ const handleClick = url => {
 };
 
 const CardLink = props => {
-
   return (
-    <CardLinkStyle onClick={handleClick.bind(this, props.link)}>{props.id}</CardLinkStyle>
+    <CardLinkStyle onClick={handleClick.bind(this, props.link)}>
+      {props.id}
+    </CardLinkStyle>
   );
 };
 export default CardLink;

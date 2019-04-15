@@ -71,17 +71,3 @@ export default function Photos() {
     </Content>
   );
 }
-
-// export default function Projects() {
-//   return (
-//     <Content>
-//       <ProjectCards>
-//         {Object.keys(data.projects).map(project_id => {
-//           return (
-//             <Project key={project_id} project={data.projects[project_id]} icons={data.technology}/>
-//           );
-//         })}
-//       </ProjectCards>
-//     </Content>
-//   );
-// }
