@@ -27,12 +27,13 @@ class Navigation extends React.Component {
     }
   };
 
-  handleClick = event => {
-    this.props.toggle(event.target.innerText);
-  };
-
   handleLogoClick = () => {
     this.setState({ show: !this.state.show });
+  };
+
+  handleClick = event => {
+    this.props.toggle(event.target.innerText);
+    this.handleLogoClick()
   };
 
   render() {

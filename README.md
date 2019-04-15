@@ -7,5 +7,3 @@ This is a React edition of [Vue SPA](https://github.com/d-mv/home). Stack used:
 - Styled Components
 - React Icons
 - Web Font Loader
-
-TODO: NProgress loading indicator.

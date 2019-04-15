@@ -7,7 +7,6 @@
   "homepage": "https://melnikov.dev/home-react-styled/build",
   "private": true,
   "dependencies": {
-    "nprogress": "^0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.5.0",

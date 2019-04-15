@@ -1,23 +1,24 @@
 import styled from "styled-components";
 
 const Grid = styled.div`
-  /* padding: 20px 0; */
   @media (max-width: 350px) {
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     margin: 0;
   }
   @media (min-width: 351px) and (max-width: 699px) {
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
   }
   @media (min-width: 700px) {
