@@ -7,7 +7,7 @@ const ProjectCard = styled.section`
   height: max-content;
   margin: 10px;
   background-color: #ececec;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 `;
 
 export default ProjectCard;

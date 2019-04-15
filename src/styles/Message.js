@@ -24,6 +24,8 @@ const LineFour = styled(LinesStyle)`
 `;
 
 const SendMessageStyle = styled.section`
+  font-weight: 300;
+
   cursor: pointer;
   margin: 10px 0;
   color: #878787;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const LogoStyle = styled.section`
-z-index: 101;
+  z-index: 101;
   padding: 10px;
   position: absolute;
   top: 0;
@@ -9,6 +9,6 @@ z-index: 101;
   border-bottom: 1px solid grey;
   font-size: 18px;
   background-color: white;
-  cursor:pointer;
+  cursor: pointer;
 `;
 export default LogoStyle;

@@ -1,6 +1,6 @@
 {
   "name": "home-react-styled",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Home app with React & Styled Components",
   "author": "Dmitry Melnikov",
   "license": "UNLICENSED",
@@ -28,5 +28,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/runtime": "^7.4.3"
+  }
 }

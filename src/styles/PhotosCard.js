@@ -9,7 +9,7 @@ const PhotosCard = styled.div`
   -o-background-size: cover;
   background-size: cover;
   object-fit: cover;
-  width: 17%;
+  width: 15%;
   height: 100%;
   transition: 1s;
   &:hover {

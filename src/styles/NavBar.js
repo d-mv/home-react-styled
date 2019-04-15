@@ -25,26 +25,24 @@ const NavBar = styled.nav`
       transform: translateY(0);
     }
   }
+  position: absolute;
+  top: 45px;
+  flex-direction: column;
   z-index: 100;
   font-weight: 300;
   @media (max-width: 499px) {
     display: ${props => props.show};
-    flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    top: 50px;
     left: 0px;
     background-color: rgba(255, 255, 255, 0.9);
     animation: 1s ease-out 0s 1 slideInFromLeft;
+    top: 45px;
   }
   @media (min-width: 500px) {
+    top: 25px;
     display: ${props => props.show};
-    flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    position: absolute;
-    top: 45px;
-    left: -18px;
+    left: -30px;
     animation: 1s ease-out 0s 1 slideInFromTop;
   }
 `;

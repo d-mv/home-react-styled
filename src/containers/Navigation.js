@@ -6,9 +6,9 @@ import NavBar from "../styles/NavBar";
 import NavButton from "../styles/NavButton";
 
 const sections = [
-  { name: "HOME", margin: "30px" },
-  { name: "PROJECTS", margin: "40px" },
-  { name: "PHOTOS", margin: "40px" },
+  { name: "HOME", margin: "10px" },
+  { name: "PROJECTS", margin: "20px" },
+  { name: "PHOTOS", margin: "20px" },
   { name: "CONTACTS", margin: "1rem" }
 ];
 
@@ -33,7 +33,9 @@ class Navigation extends React.Component {
 
   handleClick = event => {
     this.props.toggle(event.target.innerText);
-    this.handleLogoClick()
+    if (!this.state.largeScreen) {
+      this.handleLogoClick();
+    }
   };
 
   render() {
