@@ -31,11 +31,11 @@ class Navigation extends React.Component {
     this.setState({ show: !this.state.show });
   };
 
-  handleClick = event => {
-    this.props.toggle(event.target.innerText);
+  handleClick = section => {
     if (!this.state.largeScreen) {
       this.handleLogoClick();
     }
+    this.props.toggle(section);
   };
 
   render() {
@@ -48,7 +48,7 @@ class Navigation extends React.Component {
           {sections.map(section => {
             return (
               <NavButton
-                onClick={this.handleClick}
+                onClick={this.handleClick.bind(this, section.name)}
                 key={section.name}
                 margin={section.margin}
               >
