@@ -4,7 +4,9 @@ const PhotosMainTitle = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 5px 0;
-  border-radius: 0 0 3px 3px;
+  @media (min-width: 500px) {
+    border-radius: 0 0 3px 3px;
+  }
 `;
 
 const PhotosMainTitleLines = styled.p`
