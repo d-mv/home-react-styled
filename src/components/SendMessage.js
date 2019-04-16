@@ -3,6 +3,7 @@ import React from "react";
 import { SendMessageStyle } from "../styles/Message";
 
 const message = "{ send message }";
+
 const handleClickMail = () => {
   const messageDetails = {
     email: "d.dash.mv@gmail.com",
