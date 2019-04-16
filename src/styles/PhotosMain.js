@@ -9,7 +9,7 @@ const PhotosMain = styled.section`
   flex-direction: column;
   justify-content: flex-end;
   align-content: flex-end;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   animation: 1s ease-out 0s 1 growLarge;
   transition: 1s;
   @media (max-width: 499px) {
