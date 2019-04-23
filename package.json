@@ -1,7 +1,7 @@
 {
   "name": "home-react-styled",
-  "version": "1.5.0",
-  "description": "Home app with React & Styled Components",
+  "version": "2.0.0",
+  "description": "Homepage app (React, TS & Styled Components)",
   "author": "Dmitry Melnikov",
   "license": "MIT",
   "homepage": "https://melnikov.dev",
