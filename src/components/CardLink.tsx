@@ -1,12 +1,13 @@
 import React from "react";
-import NewWindow from "react-new-window";
 
 import { CardLinkStyle } from "../style/CardElements";
 
+interface Window {
+  open: (arg0: any) => void
+}
+
 const handleClick = (url: string) => {
-  if (window.open(url, "_blank") !== null) {
-    const newWindow = <NewWindow url={url} />
-  }
+  window.open(url, "_blank")
 };
 
 const CardLink = (IProps: { link: string; id: string }) => {

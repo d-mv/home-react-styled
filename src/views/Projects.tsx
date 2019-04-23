@@ -9,11 +9,12 @@ import data from "../data/data.json";
 const  Projects = () => {
   const projects:any = data.projects
   return (
-    <Content>
-      <ProjectCards>
-        {Object.keys(data.projects).map((project_id:any) => {
+    <Content data-test="view-content-projects">
+      <ProjectCards data-test='style-project-cards'>
+        {Object.keys(data.projects).map((project_id: any) => {
           return (
             <Project
+              data-test="component-project"
               key={project_id}
               project={projects[project_id.toString()]}
               icons={data.technology}

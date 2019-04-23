@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import Main from "./style/Main";
-import Home from "./containers/Home";
-import Projects from "./containers/Projects";
-import Photos from "./containers/Photos";
-import Contacts from "./containers/Contacts";
-import Navigation from "./containers/Navigation";
+import Main from "../style/Main";
+import Home from "../views/Home";
+import Projects from "../views/Projects";
+import Photos from "../views/Photos";
+import Contacts from "../views/Contacts";
+import Navigation from "./Navigation";
 
 const App = () => {
   const [module, setModule] = useState("HOME");

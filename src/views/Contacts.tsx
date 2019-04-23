@@ -1,5 +1,4 @@
 import React from "react";
-import NewWindow from "react-new-window";
 
 import {
   FaGithubAlt,
@@ -19,26 +18,24 @@ import {
   ContactText
 } from "../style/ContactStyles";
 
+interface Window {
+  open: (arg0: any) => void
+}
+
 const handleClickGitHub = () => {
   const url = "https://github.com/d-mv";
-  if (window.open(url, "_blank") !== null) {
-    const newWindow = <NewWindow url={url} />;
-  }
+  window.open(url, "_blank");
 };
 const handleClickLinkedIn = () => {
   const url = "https://www.linkedin.com/in/dmitry-melnikov-pm/";
-  if (window.open(url, "_blank") !== null) {
-    const newWindow = <NewWindow url={url} />;
-  }
+  window.open(url, "_blank");
 };
 const handleClickSkype = () => {
   window.location.href = "skype:dmitry.melnikov?chat";
 };
 const handleClickInstagram = () => {
   const url = "https://www.instagram.com/melnikov_dm/";
-  if (window.open(url, "_blank") !== null) {
-    const newWindow = <NewWindow url={url} />;
-  }
+  window.open(url, "_blank");
 };
 const handleClickMail = () => {
   const messageDetails = {
@@ -55,12 +52,10 @@ const handleClickMail = () => {
 };
 const handleClickWhatsApp = () => {
   const url = "https://wa.me/972586297491";
-  if (window.open(url, "_blank") !== null) {
-    const newWindow = <NewWindow url={url} />;
-  }
+  window.open(url, "_blank");
 };
 
-export default function Contacts() {
+ const Contacts = ()=> {
   return (
     <Content id="content">
       <ContactsGrid id="grid">
@@ -100,3 +95,5 @@ export default function Contacts() {
     </Content>
   );
 }
+
+export default Contacts

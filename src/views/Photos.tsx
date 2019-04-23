@@ -8,7 +8,7 @@ import {
   PhotosMainTitleLineOne,
   PhotosMainTitleLineTwo
 } from "../style/PhotosMainTitle";
-import PhotosBelt from "./PhotosBelt";
+import PhotosBelt from "../containers/PhotosBelt";
 
 const Photos = () => {
   const [photo, setPhoto] = useState(data.photos[1]);
