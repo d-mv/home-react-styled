@@ -12,7 +12,6 @@ const Photos = (IProps: { choosePhoto: (arg0: any) => void; photos: { [x: string
   };
 
   const handleClick = (direction:string) => {
-    console.log(IProps.photos);
     const size = Object.keys(IProps.photos).length;
     switch (direction) {
       case "left":
