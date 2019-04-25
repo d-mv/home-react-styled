@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 interface IProps {
-  degree: number
+  degree: number;
 }
 
-const PhotosArrow = styled.div<IProps>`
+const PhotosArrow = styled.button<IProps>`
+  background: none;
+  border: none;
   font-size: 2rem;
   color: rgba(0, 0, 0, 0.2);
   align-self: center;

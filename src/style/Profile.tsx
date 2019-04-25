@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Profile = styled.div`
+const Profile = styled.section`
   @media (max-width: 699px) {
     grid-area: alpha;
     align-self: center;
@@ -23,5 +23,4 @@ const Profile = styled.div`
     word-wrap: normal;
   }
 `;
-
 export default Profile;

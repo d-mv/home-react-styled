@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-const MessageStyle = styled.article``;
+const MessageStyle = styled.div`
+background:none;
+`;
 
 const LinesStyle = styled.p`
   margin: 0;

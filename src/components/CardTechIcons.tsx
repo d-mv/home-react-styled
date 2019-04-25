@@ -5,8 +5,8 @@ import { CardTechIconsWrapper } from "../style/CardElements";
 
 const CardTechIcons = (IProps:{technology: Array<string>,icons:any}) => {
   return (
-    <CardTechIconsWrapper>
-      {IProps.technology.map((tech:any) => {
+    <CardTechIconsWrapper data-test="component-ticons">
+      {IProps.technology.map((tech: any) => {
         return <CardTechIcon key={tech} icon={IProps.icons[tech][0]} />;
       })}
     </CardTechIconsWrapper>

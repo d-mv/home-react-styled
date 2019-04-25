@@ -14,13 +14,13 @@ const PhotosMainTitleLines = styled.p`
   padding: 5px 10px;
   font-weight: 300;
 `;
-const PhotosMainTitleLineOne = styled(PhotosMainTitleLines)`
+const PhotosMainTitleOne = styled(PhotosMainTitleLines)`
   font-size: 1.5rem;
   font-weight: 300;
 `;
-const PhotosMainTitleLineTwo = styled(PhotosMainTitleLines)`
+const PhotosMainTitleTwo = styled(PhotosMainTitleLines)`
   font-size: 1rem;
   font-style: italic;
 `;
 
-export { PhotosMainTitle, PhotosMainTitleLineOne, PhotosMainTitleLineTwo };
+export { PhotosMainTitle, PhotosMainTitleOne, PhotosMainTitleTwo };

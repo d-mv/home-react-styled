@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ProjectCards = styled.section`
+const ProjectCards = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

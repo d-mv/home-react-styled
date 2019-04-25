@@ -7,11 +7,11 @@ WebFont.load({
   }
 });
 
-const Main = styled.main`
+const Wrapper = styled.div`
   width: 100%;
   font-family: Rubik;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
 `;
-export default Main;
+export default Wrapper;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { growLarge } from "../animation";
 
-const Photo = styled.div`
+const Photo = styled.section`
   img {
     @media (max-width: 350px) {
       margin: 20px 0;

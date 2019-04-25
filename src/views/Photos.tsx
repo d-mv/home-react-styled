@@ -1,28 +1,40 @@
 import React, { useState } from "react";
-import data from "../data/data.json";
+
+import PhotosBelt from "../containers/PhotosBelt";
 
 import Content from "../style/Content";
 import PhotosMain from "../style/PhotosMain";
 import {
   PhotosMainTitle,
-  PhotosMainTitleLineOne,
-  PhotosMainTitleLineTwo
+  PhotosMainTitleOne,
+  PhotosMainTitleTwo
 } from "../style/PhotosMainTitle";
-import PhotosBelt from "../containers/PhotosBelt";
 
-const Photos = () => {
-  const [photo, setPhoto] = useState(data.photos[1]);
-
+const Photos = (Photos: {
+  data: {
+    [index: string]: {
+      title: string;
+      location: string;
+      large: string;
+      thumb: string;
+    };
+  };
+}) => {
+  const [mainPhoto, setPhoto] = useState(Photos.data["1"]);
   return (
-    <Content id="content">
-      <PhotosMain id="photos-main" photo={photo.large}>
-        <PhotosMainTitle id="photos-main-title">
-          <PhotosMainTitleLineOne>{photo.title}</PhotosMainTitleLineOne>
-          <PhotosMainTitleLineTwo>{photo.location}</PhotosMainTitleLineTwo>
+    <Content data-test="view-content-photos">
+      <PhotosMain photo={mainPhoto.large} data-test="style-photo-main">
+        <PhotosMainTitle data-test="style-photo-title">
+          <PhotosMainTitleOne>{mainPhoto.title}</PhotosMainTitleOne>
+          <PhotosMainTitleTwo>{mainPhoto.location}</PhotosMainTitleTwo>
         </PhotosMainTitle>
       </PhotosMain>
-      <PhotosBelt choosePhoto={setPhoto} photos={data.photos} />
+      <PhotosBelt
+        choosePhoto={setPhoto}
+        photos={Photos.data}
+        data-test="container-photo-belt"
+      />
     </Content>
   );
-}
-export default Photos
+};
+export default Photos;

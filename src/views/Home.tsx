@@ -12,8 +12,8 @@ const Home = () => {
     <Content data-test="view-content-home">
       <Grid data-test="style-grid">
         <Profile data-test="style-profile">
-          <Message />
-          <SendMessage />
+          <Message data-test="component-message" />
+          <SendMessage data-test="component-send-message" />
         </Profile>
         <Photo data-test="style-image">
           <img

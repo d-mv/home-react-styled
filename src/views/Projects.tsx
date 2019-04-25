@@ -4,26 +4,41 @@ import Content from "../style/Content";
 import Project from "../components/Project";
 import ProjectCards from "../style/ProjectCards";
 
-import data from "../data/data.json";
+const Projects = (Projects: {
+  data: {
+    [index: string]: {
+      title: string;
+      description: string;
+      photo: string;
+      details: string;
+      technology: string[];
+      links: { [index: string]: string };
+    };
+  };
+  technology: {
+    [index: string]: string[];
+  };
+}) => {
+  if (Projects.data && Projects.technology) {
+    return (
+      <Content data-test="view-content-projects">
+        <ProjectCards data-test="style-project-cards">
+          {Object.keys(Projects.data).map((project_id: any) => {
+            return (
+              <Project
+                data-test="component-project"
+                key={project_id}
+                project={Projects.data[project_id.toString()]}
+                icons={Projects.technology}
+              />
+            );
+          })}
+        </ProjectCards>
+      </Content>
+    );
+  } else {
+    return <Content data-test="view-content-projects-empty" />;
+  }
+};
 
-const  Projects = () => {
-  const projects:any = data.projects
-  return (
-    <Content data-test="view-content-projects">
-      <ProjectCards data-test='style-project-cards'>
-        {Object.keys(data.projects).map((project_id: any) => {
-          return (
-            <Project
-              data-test="component-project"
-              key={project_id}
-              project={projects[project_id.toString()]}
-              icons={data.technology}
-            />
-          );
-        })}
-      </ProjectCards>
-    </Content>
-  );
-}
-
-export default Projects
+export default Projects;

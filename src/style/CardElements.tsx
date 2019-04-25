@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-const CardLinksStyle = styled.section`
+const CardLinksStyle = styled.div`
   display: flex;
   justify-content: space-around;
   align-content: center;
   padding: 10px;
 `;
 
-const CardLinkStyle = styled.section`
+const CardLinkStyle = styled.div`
   font-size: 0.8rem;
   font-style: italic;
   color: #878787;
@@ -16,7 +16,7 @@ const CardLinkStyle = styled.section`
   }
   cursor: pointer;
 `;
-const CardDescriptionStyle = styled.section`
+const CardDescriptionStyle = styled.div`
   grid-area: details;
   padding: 10px;
   font-weight: 300;
@@ -26,7 +26,7 @@ interface IProps {
   image: string;
 }
 
-const CardPhotoStyle = styled.section<IProps>`
+const CardPhotoStyle = styled.div<IProps>`
   grid-area: photo;
   height: 250px;
   background: rgba(0, 0, 0, 0) url(${props => props.image}) no-repeat scroll
@@ -45,7 +45,7 @@ const CardPhotoStyle = styled.section<IProps>`
   align-content: flex-end;
 `;
 
-const CardTechIconsWrapper = styled.section`
+const CardTechIconsWrapper = styled.div`
   grid-area: logos;
   display: flex;
   flex-direction: row;
@@ -53,26 +53,26 @@ const CardTechIconsWrapper = styled.section`
   padding: 0 5px;
 `;
 
-const CardTechIconStyle = styled.section`
+const CardTechIconStyle = styled.div`
   img {
     height: 20px;
     margin: 0 5px;
   }
 `;
 
-const CardTitleLineOne = styled.section`
+const CardTitleLineOne = styled.div`
   padding: 5px 10px;
   font-size: 1.5rem;
   font-weight: 300;
 `;
 
-const CardTitleLineTwo = styled.section`
+const CardTitleLineTwo = styled.div`
   padding: 5px 10px;
   font-size: 1rem;
   font-style: italic;
 `;
 
-const CardTitleWrapper = styled.section`
+const CardTitleWrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 5px 0;

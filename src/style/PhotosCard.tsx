@@ -3,7 +3,7 @@ import styled from "styled-components";
 interface IProps {
   photo: string
 }
-const PhotosCard = styled.div<IProps>`
+const PhotosCard = styled.section<IProps>`
   background: rgba(0, 0, 0, 0) url(${props => props.photo}) no-repeat scroll
     center center / cover;
   background-color: white;

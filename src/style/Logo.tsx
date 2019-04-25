@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const LogoStyle = styled.section`
+const LogoStyle = styled.div`
   z-index: 101;
   padding: 10px;
   position: absolute;

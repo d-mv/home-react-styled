@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Content = styled.article`
+const Content = styled.main`
   position: absolute;
   top: 0;
   right: 0;
@@ -13,5 +13,4 @@ const Content = styled.article`
     left: 50px;
   }
 `;
-
 export default Content;
