@@ -5,8 +5,6 @@ import "../../test/setupTest";
 
 import Home from "./Home";
 
-const defaultProps = {};
-
 /**
  * Functional React component for congrats message
  * @function setup

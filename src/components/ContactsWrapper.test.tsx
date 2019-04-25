@@ -12,7 +12,7 @@ import ContactsWrapper from "./ContactsWrapper";
 //   <div data-test={title}>{props.icon}</div>
 //   )}
 
-const defaultProps = {
+const testData = {
   contacts: [
     {
       icon: "FaGithubAlt",
@@ -46,9 +46,9 @@ test("component renders OK without documents", () => {
 });
 
 test("component renders icons, if supplied", () => {
-  const wrapper = setup(defaultProps);
+  const wrapper = setup(testData);
   const componentsNodes = findByTestAttr(wrapper, "component-contact");
   expect(componentsNodes.length).toBe(
-    Object.keys(defaultProps.contacts).length
+    Object.keys(testData.contacts).length
   );
 });

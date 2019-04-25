@@ -6,12 +6,6 @@ import "../../test/setupTest";
 
 import CardLink from "./CardLink";
 
-// const icon = (props: {icon: string}) => {
-//   const title = `component-test-icon-${props.icon}`
-//   return (
-//   <div data-test={title}>{props.icon}</div>
-//   )}
-
 const testData = {
   id: "Link",
   link: "https://www.github.io"
@@ -39,7 +33,6 @@ describe("component works fine when supplied data", () => {
     wrapper = setup(testData);
   });
   test("component renders link", () => {
-    // const iconTag = `component-contact-${testData.contact.icon.toLowerCase()}`;
     const componentsNodes = findByTestAttr(wrapper, "component-card-link");
     expect(componentsNodes.length).toBe(1);
   });
