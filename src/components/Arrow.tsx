@@ -2,19 +2,20 @@ import React from "react";
 
 import PhotosArrow from "../style/PhotosArrow";
 
-const handleClick = (func: any, direction:string) => {
+const handleClick = (func: any, direction: string) => {
   func(direction);
 };
 
-const Arrow = (IProps: {right?:boolean, left?:boolean, click: any}) => {
+const Arrow = (IProps: { right?: boolean; left?: boolean; click: any }) => {
   let degree = 0;
   let direction = "left";
   if (IProps.right) {
     degree = 180;
     direction = "right";
   }
+  const testTag = `component-arrow-${direction}`;
   return (
-    <PhotosArrow degree={degree}>
+    <PhotosArrow degree={degree} data-test={testTag}>
       <svg
         viewBox="0 0 15 34"
         width="15"

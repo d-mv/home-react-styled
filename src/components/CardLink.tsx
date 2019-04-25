@@ -3,18 +3,25 @@ import React from "react";
 import { CardLinkStyle } from "../style/CardElements";
 
 interface Window {
-  open: (arg0: any) => void
+  open: (arg0: any) => void;
 }
 
 const handleClick = (url: string) => {
-  window.open(url, "_blank")
+  window.open(url, "_blank");
 };
 
 const CardLink = (IProps: { link: string; id: string }) => {
-  return (
-    <CardLinkStyle onClick={() => handleClick(IProps.link)}>
-      {IProps.id}
-    </CardLinkStyle>
-  );
+  if (IProps.link && IProps.id) {
+    return (
+      <CardLinkStyle
+        onClick={() => handleClick(IProps.link)}
+        data-test="component-card-link"
+      >
+        {IProps.id}
+      </CardLinkStyle>
+    );
+  } else {
+    return null;
+  }
 };
 export default CardLink;
