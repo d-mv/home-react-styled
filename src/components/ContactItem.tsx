@@ -8,8 +8,8 @@ import {
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-import Style from "../style/ContactItem";
-
+// import Style from "../style/ContactItem";
+import { ContactsGrid } from "../style/Grid";
 import { ContactIcon, ContactText } from "../style/ContactStyles";
 
 interface Window {
@@ -51,11 +51,13 @@ const handleClick = (mode: string, url: string) => {
   }
 };
 
-const ContactItem = (ContactProps: {contact: { icon: string; description: string; link: string }}) => {
+const ContactItem = (ContactProps: {
+  contact: { icon: string; description: string; link: string };
+}) => {
   if (ContactProps.contact) {
     const icon = chooseIcon(ContactProps.contact.icon);
     return (
-      <Style
+      <ContactsGrid
         onClick={() =>
           handleClick(ContactProps.contact.icon, ContactProps.contact.link)
         }
@@ -65,7 +67,7 @@ const ContactItem = (ContactProps: {contact: { icon: string; description: string
         <ContactText data-test="component-contact-description">
           {ContactProps.contact.description}
         </ContactText>
-      </Style>
+      </ContactsGrid>
     );
   } else {
     return null;

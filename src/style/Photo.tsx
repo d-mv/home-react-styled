@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { growLarge } from "../animation";
+import { growLarge } from "./_animations";
 
 const Photo = styled.section`
   img {

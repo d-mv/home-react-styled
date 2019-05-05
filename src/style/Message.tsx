@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const MessageStyle = styled.div`
-background:none;
+/* background:none; */
 `;
 
 const LinesStyle = styled.p`

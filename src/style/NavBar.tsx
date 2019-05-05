@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { slideInFromTop } from "../animation";
+import { slideInFromTop } from "./_animations";
 
 interface IProps {
   show: string;

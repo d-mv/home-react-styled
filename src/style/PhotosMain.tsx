@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface IProps {
-  photo: string
+  photo: string;
 }
 
 const PhotosMain = styled.section<IProps>`

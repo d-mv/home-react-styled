@@ -36,24 +36,28 @@ const Grid = styled.div`
 
 const ContactsGrid = styled.div`
   display: grid;
-  grid-template-rows: auto auto;
+  /* grid-template-rows: auto auto; */
   grid-template-areas: "alpha beta";
   grid-column-gap: 1rem;
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
+
+  margin: auto;
   align-content: center;
   @media (max-width: 350px) {
+    width: 90%;
     grid-template-columns: 1fr 5fr;
   }
-  @media (min-width: 351px) and (max-width: 500px) {
+  @media (min-width: 351px) and (max-width: 549px) {
+    width: 90%;
     grid-template-columns: 1fr 4fr;
   }
-  @media (min-width: 501px) and (max-width: 1000px) {
+  @media (min-width: 559px) and (max-width: 1000px) {
+    width: 50%;
     grid-template-columns: 1fr 2fr;
   }
   @media (min-width: 1001px) {
-    grid-template-columns: 1fr 1fr;
+    /* margin-top: 5rem; */
+    grid-template-columns: 1fr 3fr;
+    width: 50%;
   }
 `;
 

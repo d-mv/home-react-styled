@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { arsenic, lightGrey } from "./_definitions";
 interface IProps {
   degree: number;
 }
@@ -8,7 +8,10 @@ const PhotosArrow = styled.button<IProps>`
   background: none;
   border: none;
   font-size: 2rem;
-  color: rgba(0, 0, 0, 0.2);
+  @media (prefers-color-scheme: dark) {
+    color: ${lightGrey};
+  }
+  color: ${arsenic};
   align-self: center;
   transition: 0.7s;
   transform: rotate(${props => props.degree}deg);

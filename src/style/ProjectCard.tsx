@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-import { scaleUp } from "../animation";
+import { scaleUp } from "./_animations";
+import {
+  arsenic,
+  darkMediumGrey,
+  boxShadow,
+  boxTransition,
+  boxShadowHover
+} from "./_definitions";
 
 const ProjectCard = styled.section`
   animation: ${scaleUp} 1s steps(200, start);
@@ -9,8 +16,16 @@ const ProjectCard = styled.section`
   width: 300px;
   height: max-content;
   margin: 10px;
+  @media (prefers-color-scheme: dark) {
+    background-color: ${darkMediumGrey};
+    color: ${arsenic};
+  }
   background-color: #ececec;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: ${boxShadow};
+  transition: ${boxTransition};
+  &:hover {
+    box-shadow: ${boxShadowHover};
+  }
 `;
 
 export default ProjectCard;

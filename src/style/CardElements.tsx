@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { arsenic, darkMediumGrey } from "./_definitions";
+
 const CardLinksStyle = styled.div`
   display: flex;
   justify-content: space-around;
@@ -10,6 +12,13 @@ const CardLinksStyle = styled.div`
 const CardLinkStyle = styled.div`
   font-size: 0.8rem;
   font-style: italic;
+  @media (prefers-color-scheme: dark) {
+    background-color: ${darkMediumGrey};
+    color: ${arsenic};
+    &:hover {
+      color: black;
+    }
+  }
   color: #878787;
   &:hover {
     color: black;
