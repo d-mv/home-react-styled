@@ -17,13 +17,13 @@ const Home = () => {
         </Profile>
         <Photo data-test="style-image">
           <img
-            src="https://res.cloudinary.com/diciu4xpu/image/upload/v1552251001/home/avatar_photo.jpg"
+            src="https://res.cloudinary.com/diciu4xpu/image/upload/v1557253616/home/home_avatar_photo.jp2"
             alt="Dmitry\'s avatar"
           />
         </Photo>
       </Grid>
     </Content>
   );
-}
+};
 
 export default Home;
