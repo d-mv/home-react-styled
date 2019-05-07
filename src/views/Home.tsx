@@ -17,7 +17,7 @@ const Home = () => {
         </Profile>
         <Photo data-test="style-image">
           <img
-            src="https://res.cloudinary.com/diciu4xpu/image/upload/v1557253616/home/home_avatar_photo.jp2"
+            src="https://res.cloudinary.com/diciu4xpu/image/upload/v1552251001/home/avatar_photo.jpg"
             alt="Dmitry\'s avatar"
           />
         </Photo>
