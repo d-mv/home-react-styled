@@ -1,0 +1,33 @@
+{
+  "sections": [
+    { "name": "", "margin": "" },
+    { "name": "", "margin": "" },
+    { "name": "", "margin": "" },
+    { "name": "", "margin": "" }
+  ],
+  "photos": {
+    "1": {
+      "title": "",
+      "location": "",
+      "thumb": ""
+    }
+  },
+  "projects": {
+    "1": {
+      "title": "",
+      "description": "",
+      "photo": "",
+      "details": "",
+      "technology": ["", "", "", "", ""],
+      "links": {
+        "github": "",
+        "deployed": "",
+        "video": "",
+        "other": ""
+      }
+    }
+  },
+  "technology": {
+    "scss": ["", ""]
+  }
+}
