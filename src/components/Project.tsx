@@ -9,7 +9,6 @@ import CardLinks from "./CardLinks";
 
 const Project = (IProps: { project: any; icons: {} }) => {
   const handleClick = (links: any) => {
-    let url;
     if ("deployed" in links) {
     window.open(links.deployed, "_blank");
     } else if ("github" in links) {
