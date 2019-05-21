@@ -20,13 +20,11 @@ const Projects = (Projects: {
   };
 }) => {
   if (Projects.data && Projects.technology) {
-    console.log(Projects);
     return (
       <Content data-test="view-content-projects">
         <ProjectCards data-test="style-project-cards">
           {Object.keys(Projects.data).map((project_id: any) => {
             const proj = Projects.data[project_id.toString()];
-            console.log(proj);
             return (
               <Project
                 data-test="component-project"

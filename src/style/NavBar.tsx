@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import { slideInFromTop } from "./_animations";
+import { slideInFromTop, slideInFromLeft } from "./_animations";
+import { lightGrey } from "./_definitions";
 
 interface IProps {
   show: string;
@@ -12,11 +13,17 @@ const NavBar = styled.nav<IProps>`
   flex-direction: column;
   z-index: 100;
   font-weight: 300;
+  a {
+    text-decoration: none;
+  }
   @media (max-width: 499px) {
     display: ${props => props.show};
     left: 0px;
     background-color: rgba(255, 255, 255, 0.9);
-    animation: 1s ease-out 0s 1 ${slideInFromTop};
+    @media (prefers-color-scheme: dark) {
+      background-color: ${lightGrey};
+    }
+    animation: 1s ease-out 0s 1 ${slideInFromLeft};
     top: 45px;
   }
   @media (min-width: 500px) {
